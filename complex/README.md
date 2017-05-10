@@ -11,6 +11,13 @@ Which is passed as an argument to the program `./zzvm test.zz` and it will
 execute the program. Note that there could be more error checks on memory,
 etc. But these are not accounted for for simplicity and brevity.
 
+## zzlang
+a newbie language
+
+* Filename suffix
+  * zz: sourcecode
+  * vm: bytecode
+
 ## Registers
 
 	register	purpose
