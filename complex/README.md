@@ -1,13 +1,13 @@
 # Complex
 
 This is the more advanced version, it has more instructions and 
-you can pass it files, for instance this file is `test.vm`:
+you can pass it files, for instance this file is `test.zz`:
 
 	1 5 2 1
 	5 2 1 5
 	2 0
 
-Which is passed as an argument to the program `./zzvm test.vm` and it will
+Which is passed as an argument to the program `./zzvm test.zz` and it will
 execute the program. Note that there could be more error checks on memory,
 etc. But these are not accounted for for simplicity and brevity.
 
