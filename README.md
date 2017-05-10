@@ -16,7 +16,7 @@ https://github.com/felixangell/mac
 Only implemented in complex version
 
 - [ ] Disassembler
-- [ ] zzlang, A Language
+- [ ] zzlang, A new Language
 - [ ] Compile to ZZVM
 - [ ] Assembler
 - [ ] VM Interpreter
