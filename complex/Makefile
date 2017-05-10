@@ -1,4 +1,5 @@
-CFLAGS = -Wall -Wextra -g -std=c11
+CFLAGS = -Wall -Wextra -g -std=c99
+CC = gcc
 
 all: 
 	${CC} ${CFLAGS} zzvm.c -o zzvm
