@@ -13,6 +13,7 @@ ZZVM is a really simple virtual machine
 https://github.com/felixangell/mac
 
 ## TODO
+Only implemented in complex version
 
 - [ ] Disassembler
 - [ ] zzlang, A Language
