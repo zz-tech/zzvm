@@ -11,3 +11,11 @@ ZZVM is a really simple virtual machine
 
 # Acknowledge
 https://github.com/felixangell/mac
+
+## TODO
+
+- [ ] Disassembler
+- [ ] zzlang, A Language
+- [ ] Compile to ZZVM
+- [ ] Assembler
+- [ ] VM Interpreter
