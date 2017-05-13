@@ -1,6 +1,11 @@
 CFLAGS = -Wall -Wextra -g -std=c11
 
-all: mac
+all: zzvm
 
-test: mac
-	./mac
+test: zzvm
+	./zzvm
+
+.PHONY : clean
+
+clean:
+	rm -f zzvm

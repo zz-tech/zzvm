@@ -1,9 +1,3 @@
-/**
-
-	This is almost identical to the articles
-	VM
-
-**/
 
 #include <stdio.h>
 #include <stdbool.h>
@@ -22,8 +16,8 @@ typedef enum {
 } InstructionSet;
 
 const int program[] = {
-    PSH, 5,
-    PSH, 6,
+    PSH, 15,
+    PSH, 26,
     ADD,
     POP,
     HLT
@@ -31,6 +25,10 @@ const int program[] = {
 
 int fetch() {
     return program[ip];
+}
+
+int next() {
+    return program[++ip];
 }
 
 void eval(int instr) {
@@ -42,7 +40,7 @@ void eval(int instr) {
         }
         case PSH: {
     	    sp++;
-	        stack[sp] = program[++ip];
+	        stack[sp] = next();
 	        break;
         }
         case POP: {
@@ -68,7 +66,7 @@ void eval(int instr) {
     }
 }
 
-int main() {
+int main(void) {
     while (running) {
         eval(fetch());
         ip++; // increment the ip every iteration
