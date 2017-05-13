@@ -1,4 +1,6 @@
-
+/*
+ *     A mini version of the VM
+ */
 #include <stdio.h>
 #include <stdbool.h>
 
