@@ -15,8 +15,8 @@ https://github.com/felixangell/mac
 ## TODO
 Only implemented in complex version
 
+- [ ] Zzlang, a new language
 - [ ] Disassembler
-- [ ] zzlang, A new Language
 - [ ] Compile to ZZVM
 - [ ] Assembler
 - [ ] VM Interpreter
