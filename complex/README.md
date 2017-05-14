@@ -19,6 +19,8 @@ a newbie language
   * vm: bytecode
 
 ## Bytecode format
+1. bytecode file signatures: `bytecode@zzvm`
+2. Each instruction starts with a colon
 
 ```
 bytecode@zzvm
