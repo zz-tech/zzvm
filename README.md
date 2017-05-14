@@ -2,8 +2,8 @@
 ZZVM is a really simple virtual machine
 
 # Implement
-* simple
-* complex
+* [simple](simple)
+* [complex](complex)
 
 # Article
 * http://www.codeceo.com/article/virtual-machine-in-c.html
