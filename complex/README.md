@@ -17,6 +17,8 @@ a newbie language
 * Filename suffix
   * zz: sourcecode
   * vm: bytecode
+* Syntax
+* Semantics
 
 ## Bytecode format
 1. bytecode file signatures: `bytecode@zzvm`
