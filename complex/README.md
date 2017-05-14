@@ -21,7 +21,7 @@ a newbie language
 * Semantics
 
 ## Bytecode format
-1. bytecode file signatures: `bytecode@zzvm`
+1. Bytecode file signatures: `bytecode@zzvm`
 2. Each instruction starts with a colon
 
 ```
