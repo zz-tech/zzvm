@@ -13,16 +13,6 @@
 #define STACK_SIZE 256
 static int stack[STACK_SIZE];
 
-/** Registers */
-typedef enum {
-    A, B, C, D, E, F, I, J, // GENERAL PURPOSE
-    EX,                     // EXCESS
-    EXA,                    // MORE EXCESS
-    IP,                     // INSTRUCTION POINTER
-    SP,                     // STACK POINTER
-    REGISTER_SIZE
-} Registers;
-
 static int registers[REGISTER_SIZE];
 
 // instructions array
