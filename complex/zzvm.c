@@ -5,8 +5,10 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "opcodes.h"
+#include "vm.h"
 
 #define STACK_SIZE 256
 static int stack[STACK_SIZE];
@@ -229,10 +231,28 @@ int main(int argc, char** argv) {
     instructions = malloc(sizeof(*instructions) * instruction_space); // 4 instructions
 
     // read the "binary" file
-    int num;
+    char buff[16];
     int i = 0;
-    while (fscanf(file, "%d", &num) > 0) {
-        instructions[i] = num;
+    int ret;
+
+    ret = fscanf(file, "%s", buff);
+    if(ret) {
+        if (strcmp(buff, SIGNATURES) == 0) {
+            printf("%s", buff);
+        } else {
+            printf("error: not zzlang bytecode `%s`\n", filename);
+            return -1;
+        }
+    } else {
+        printf("error[2]: could not read file `%s`\n", filename);
+        return -1;
+    }
+
+    while (fscanf(file, "%s", buff) > 0) {
+        if (strcmp(buff, ":") == 0) {
+            continue;
+        }
+        instructions[i] = atoi((const char *)buff);
         printf("%d\n", instructions[i]);
         i++;
         if (i >= instruction_space) {

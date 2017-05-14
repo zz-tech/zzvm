@@ -18,6 +18,15 @@ a newbie language
   * zz: sourcecode
   * vm: bytecode
 
+## Bytecode format
+
+```
+bytecode@zzvm
+: 1 5 1 1
+: 3 11 1 9
+: 1 0
+```
+
 ## Registers
 
 	register	purpose
