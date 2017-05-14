@@ -20,3 +20,4 @@ Only implemented in complex version
 - [ ] Compile to ZZVM
 - [ ] Assembler
 - [ ] VM Interpreter
+- [ ] FlameGraph
