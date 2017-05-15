@@ -52,7 +52,7 @@ int main(int argc, char** argv) {
         if (flag) {
             flag = false;
             int index = atoi((const char *)buff);
-            printf("%s ", symbols[index]);
+            printf("%-3s ", symbols[index]);
         } else {
             printf("%s ", buff);
         }
