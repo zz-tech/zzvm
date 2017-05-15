@@ -228,7 +228,7 @@ int main(int argc, char** argv) {
     ret = fscanf(file, "%s", buff);
     if(ret) {
         if (strcmp(buff, SIGNATURES) == 0) {
-            printf("%s", buff);
+            //printf("%s", buff);
         } else {
             printf("error: not zzlang bytecode `%s`\n", filename);
             return -1;
@@ -243,7 +243,7 @@ int main(int argc, char** argv) {
             continue;
         }
         instructions[i] = atoi((const char *)buff);
-        printf("%d\n", instructions[i]);
+        //printf("%d\n", instructions[i]);
         i++;
         if (i >= instruction_space) {
             instruction_space *= 2;
